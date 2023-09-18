@@ -383,7 +383,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{RightHand}/thumbstickClicked"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -416,7 +416,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{LeftHand}/thumbstickClicked"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""Select"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -449,7 +449,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{RightHand}/secondaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""A"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -493,7 +493,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{RightHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""B"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -559,7 +559,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{RightHand}/gripButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""R2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -589,10 +589,10 @@ namespace SK.Libretro.Unity
                 {
                     ""name"": """",
                     ""id"": ""b358726c-25e2-40e1-bd6d-79111e19370b"",
-                    ""path"": ""<XRController>{RightHand}/triggerButton"",
+                    ""path"": ""<XRController>{LeftHand}/gripButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""L2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -625,7 +625,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{LeftHand}/triggerButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""L1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -658,7 +658,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""Y"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -691,7 +691,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{LeftHand}/secondaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""X"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -845,7 +845,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{LeftHand}/thumbstick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""AnalogLeft"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -922,7 +922,7 @@ namespace SK.Libretro.Unity
                     ""path"": ""<XRController>{RightHand}/thumbstick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""AnalogRight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -974,10 +974,10 @@ namespace SK.Libretro.Unity
                 {
                     ""name"": """",
                     ""id"": ""471051bd-efc7-4e4e-ac3e-afb0f033ecfe"",
-                    ""path"": ""<XRController>{LeftHand}/gripButton"",
+                    ""path"": ""<XRController>{RightHand}/triggerButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard & Mouse"",
+                    ""groups"": ""XR Controller"",
                     ""action"": ""R1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1217,6 +1217,17 @@ namespace SK.Libretro.Unity
             ""devices"": [
                 {
                     ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""XR Controller"",
+            ""bindingGroup"": ""XR Controller"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<XRController>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -1646,6 +1657,15 @@ namespace SK.Libretro.Unity
             {
                 if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
                 return asset.controlSchemes[m_GamepadSchemeIndex];
+            }
+        }
+        private int m_XRControllerSchemeIndex = -1;
+        public InputControlScheme XRControllerScheme
+        {
+            get
+            {
+                if (m_XRControllerSchemeIndex == -1) m_XRControllerSchemeIndex = asset.FindControlSchemeIndex("XR Controller");
+                return asset.controlSchemes[m_XRControllerSchemeIndex];
             }
         }
         public interface IEmulationActions
