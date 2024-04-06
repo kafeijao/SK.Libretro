@@ -86,8 +86,11 @@ namespace SK.Libretro
             if (_disposedValue)
                 return;
 
-            if (disposing)
-                _contextDestroy?.Invoke();
+            if (disposing) {
+                // Todo: This kills the game when triggered. Fix the issue instead of ignoring...
+                // https://github.com/Skurdt/SK.Libretro/issues/3
+                // _contextDestroy?.Invoke();
+            }
 
             if (_windowHandle.IsNotNull())
             {
