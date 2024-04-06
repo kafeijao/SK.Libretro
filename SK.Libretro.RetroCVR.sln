@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Libretro", "SK.Libretro.csproj", "{F7152B47-6387-6F93-2859-15716955BEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Libretro.Unity", "SK.Libretro.Unity.csproj", "{9AC5B7F3-7B22-4DBB-F973-6A0FBE5EB8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Libretro.NAudio", "SK.Libretro.NAudio.csproj", "{929EE454-7F5D-534D-4955-DCD7BB05492A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{f7152b47-6387-6f93-2859-15716955bef9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f7152b47-6387-6f93-2859-15716955bef9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ac5b7f3-7b22-4dbb-f973-6a0fbe5eb8bf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ac5b7f3-7b22-4dbb-f973-6a0fbe5eb8bf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929ee454-7f5d-534d-4955-dcd7bb05492a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929ee454-7f5d-534d-4955-dcd7bb05492a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

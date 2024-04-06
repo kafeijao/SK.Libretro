@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\MemoryHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_MEMORY.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_ENVIRONMENT.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_value.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\IInputProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_vfs_dir_handle.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_mod.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_MEMDESC.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Led\NullLedProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Audio\NullAudioProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Language.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_subsystem_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary\DynamicLibrary.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_audio_buffer_status_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_sensor_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_ID_ANALOG.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\LogLevelEnumExtensions.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_system_timing.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_VFS_FILE_ACCESS_HINT.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_v2_category.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_system_av_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_THROTTLE.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_system_content_info_override.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\SystemInfo.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_rumble_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_led_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GL.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\PointerUtilities.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_log_level.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsFrameHandlerSoftwareRGB565.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\OpenGLHelperWindow.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GLFW.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\Maths.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_definition.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_perf_counter.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\Controllers.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_location_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\RETRO.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_keyboard_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Options\Options.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_display.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_ID_JOYPAD.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_sensor_action.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_options_v2_intl.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\ILogProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Options\OptionsHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_render_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_game_geometry.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\NullLogProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_memory_descriptor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\IGraphicsProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\ILogger.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Message\MessageHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\NullInputProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Audio\IAudioProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\RuntimePlatform.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_system_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_message.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_savestate_context.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\ContentOverrides.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_log_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_options_update_display_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_rumble_effect.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_render_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_perf_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_context_type.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_options_intl.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_disk_control_ext_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Audio\AudioHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_audio_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_vfs_file_handle.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\ContentOverride.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsFrameHandlerBase.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_VFS_STAT.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_get_proc_address_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\Controller.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_vfs_interface_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Platform.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_options_v2.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_game_info_ext.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\VirtualFileSystem\VFSHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_INDEX_ANALOG.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Message\NullMessageProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_game_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Message\IMessageProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_framebuffer.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_ID_MOUSE.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\LogLevel.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\SystemAVInfo.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_render_context_negotiation_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsFrameHandlerSoftware0RGB1555.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_VFS_FILE_ACCESS.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\ClassUtilities.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_pixel_format.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_subsystem_memory_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\NullGraphicsProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_render_interface_type.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary\DynamicLibraryOSX.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\LogHandlerWin.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_camera_buffer.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\IsExternalInit.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_variable.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\HardwareRenderHelperWindow.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_values.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_VFS_SEEK_POSITION.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_SIMD.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary\DynamicLibraryLinux.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\NamingStyleSuppression.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\InputHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_message_target.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_fastforwarding_override.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_REGION.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_message_type.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\DiskHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\SerializationHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_core_option_v2_definition.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_camera_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\FileSystem.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\PerfHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_input_descriptor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_frame_time_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Game.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsFrameHandlerSoftwareXRGB8888.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Led\LedHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_ID_POINTER.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_memory_map.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\SerializableCoreOptions.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\EnvironmentHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_language.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_message_ext.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_midi_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary\DynamicLibraryUNIX.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_controller_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\GraphicsFrameHandlerOpenGLXRGB8888VFlip.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_hw_render_context_negotiation_interface_type.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Led\ILedProcessor.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_MEMORY_ACCESS.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary\DynamicLibraryWindows.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\InternalsVisibleToAddons.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log\LogHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_SERIALIZATION_QUIRK.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_key.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_DEVICE_ID_LIGHTGUN.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Core.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_vfs_interface.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums\RETRO_SENSOR.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_subsystem_rom_info.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_throttle_state.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Wrapper.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_disk_control_callback.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics\NullGraphicsFrameHandler.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Options\Option.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\WrapperSettings.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\retro_controller_description.cs"/>
+        <Compile Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input\ControllersMap.cs"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Graphics"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Log"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Input"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Led"/>
+        <None Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\SK.Libretro.asmdef"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\VirtualFileSystem"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Header\AdaptedEnums"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Audio"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Message"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Options"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities"/>
+        <Folder Include="F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Scripts\Utilities\DynamicLibrary"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Unity.Collections.LowLevel.ILSupport">
+            <HintPath>F:\Downloads\TESTRetrolib\LibretroUnityFE\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+        </Reference>
+        <Reference Include="NAudio.WinMM">
+            <HintPath>F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\NAudio\Plugins\NAudio.WinMM.dll</HintPath>
+        </Reference>
+        <Reference Include="Abi.Newtonsoft.Json">
+            <HintPath>F:\Downloads\TESTRetrolib\LibretroUnityFE\Assets\ABI.CCK\Plugins\Newtonsoft.Json\Abi.Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="HtmlAgilityPack">
+            <HintPath>F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Unity\Plugins\HtmlAgilityPack.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Unity\Plugins\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Nito.Collections.Deque">
+            <HintPath>F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\Unity\Plugins\Nito.Collections.Deque.dll</HintPath>
+        </Reference>
+        <Reference Include="NAudio.Core">
+            <HintPath>F:\Documents\JetbrainsProjects\RiderProjects\SK.Libretro\NAudio\Plugins\NAudio.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="System">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Core">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.Linq">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Linq.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics.Vectors">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.Vectors.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Http">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CSharp">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Microsoft.CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Data">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Data.DataSetExtensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.DataSetExtensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Drawing">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression.FileSystem">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.Composition">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Transactions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Transactions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Win32.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
+        </Reference>
+        <Reference Include="System.AppContext">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.AppContext.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Buffers">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Buffers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Concurrent">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Concurrent.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.NonGeneric">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Specialized">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Specialized.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.Annotations">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.EventBasedAsync">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.TypeConverter">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Console">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Console.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Data.Common">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Data.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.Contracts">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.Debug">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.FileVersionInfo">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.Process">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Process.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.StackTrace">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.TextWriterTraceListener">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.Tools">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.TraceSource">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Drawing.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Drawing.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Dynamic.Runtime">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Globalization.Calendars">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Calendars.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Globalization">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Globalization.Extensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression.ZipFile">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem.DriveInfo">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.FileSystem.Watcher">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.IsolatedStorage">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.MemoryMappedFiles">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Pipes">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Pipes.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.UnmanagedMemoryStream">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Linq">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Linq.Expressions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Expressions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Linq.Parallel">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Parallel.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Linq.Queryable">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Queryable.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Memory">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Memory.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Http.Rtc">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.NameResolution">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NameResolution.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.NetworkInformation">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Ping">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Ping.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Requests">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Requests.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Security">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Sockets">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Sockets.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.WebHeaderCollection">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.WebSockets.Client">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.WebSockets">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ObjectModel">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ObjectModel.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.DispatchProxy">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.DispatchProxy.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Emit">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Emit.ILGeneration">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Emit.Lightweight">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Extensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Resources.Reader">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Reader.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Resources.ResourceManager">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Resources.Writer">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Writer.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.VisualC">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Extensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Handles">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Handles.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Numerics">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Numerics.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Formatters">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Json">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Xml">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Claims">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Claims.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Algorithms">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Csp">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Encoding">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Cryptography.X509Certificates">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.Principal">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Principal.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security.SecureString">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.SecureString.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.Duplex">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.Http">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Http.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.NetTcp">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.Primitives">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.Security">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Text.Encoding">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Text.Encoding.Extensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Text.RegularExpressions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Overlapped">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Overlapped.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Extensions">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Parallel">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Thread">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Thread.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.ThreadPool">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Timer">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Timer.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ValueTuple">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ValueTuple.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.ReaderWriter">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XDocument">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XDocument.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XmlDocument">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XmlSerializer">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XPath">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XPath.XDocument">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression.FileSystem">
+            <HintPath>C:\Program Files\Unity\UnityEditors\2021.3.23f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+
+</Project>

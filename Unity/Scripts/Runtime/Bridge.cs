@@ -425,7 +425,7 @@ namespace SK.Libretro.Unity
                 WrapperSettings wrapperSettings = new(platform)
                 {
                     LogLevel          = LogLevel.Warning,
-                    MainDirectory     = $"{Application.streamingAssetsPath}/libretro~",
+                    MainDirectory     = LibretroInstance.MainDirectoryPath,
                     LogProcessor      = logProcessor,
                     GraphicsProcessor = graphicsProcessor,
                     AudioProcessor    = audioProcessor,
@@ -688,7 +688,7 @@ namespace SK.Libretro.Unity
 
             await UniTask.WaitForEndOfFrame(_instanceComponent);
 
-            Texture2D tex = new(_texture.width, _texture.height, TextureFormat.RGB24, false, false, true);
+            Texture2D tex = new(_texture.width, _texture.height, TextureFormat.RGB24, false, false);
             tex.SetPixels32(_texture.GetPixels32());
             tex.Apply();
             byte[] bytes = tex.EncodeToPNG();

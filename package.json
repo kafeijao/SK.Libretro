@@ -1,9 +1,9 @@
 {
   "name": "com.sk.libretro",
-  "version": "0.4.0",
+  "version": "0.4.0-cvr",
   "displayName": "SK.Libretro",
   "description": "Libretro support in Unity",
-  "unity": "2022.1",
+  "unity": "2021.3",
   "dependencies": {
     "com.unity.burst": "1.7.4",
     "com.unity.textmeshpro": "3.0.6",
@@ -18,7 +18,7 @@
   "type": "library",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Skurdt/SK.Libretro.git",
+    "url": "https://github.com/kafeijao/SK.Libretro.git",
     "directory": ""
   }
 }

@@ -137,7 +137,7 @@ namespace SK.Libretro.Unity
             if (!_texture || _texture.width != width || _texture.height != height)
             {
                 UnityEngine.Object.Destroy(_texture);
-                _texture = new Texture2D(width, height, TextureFormat.BGRA32, false, false, false)
+                _texture = new Texture2D(width, height, TextureFormat.BGRA32, false, false)
                 {
                     filterMode = _filterMode
                 };

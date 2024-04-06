@@ -29,12 +29,12 @@ namespace SK.Libretro.Unity
     [DisallowMultipleComponent]
     public sealed class LibretroInstance : MonoBehaviour
     {
-        [field: SerializeField] public Camera Camera { get; private set; }
-        [field: SerializeField, Layer] public int LightgunRaycastLayer { get; private set; }
-        [field: SerializeField] public Renderer Renderer { get; private set; }
-        [field: SerializeField] public Collider Collider { get; private set; }
+        [field: SerializeField] public Camera Camera { get; set; }
+        [field: SerializeField, Layer] public int LightgunRaycastLayer { get; set; }
+        [field: SerializeField] public Renderer Renderer { get; set; }
+        [field: SerializeField] public Collider Collider { get; set; }
         [field: SerializeField] public Transform Viewer { get; private set; }
-        [field: SerializeField] public InstanceSettings Settings { get; private set; }
+        [field: SerializeField] public InstanceSettings Settings { get; set; }
         [field: SerializeField] public string CoreName { get; private set; }
         [field: SerializeField] public string GamesDirectory { get; private set; }
         [field: SerializeField] public string[] GameNames { get; private set; }
@@ -90,6 +90,8 @@ namespace SK.Libretro.Unity
 
         private Bridge _bridge;
 
+        internal static string MainDirectoryPath = $"{Application.streamingAssetsPath}/libretro~";
+
         private void OnDisable() => StopContent();
 
         public void Initialize(string coreName, string gamesDirectory, params string[] gameNames)
@@ -142,5 +144,6 @@ namespace SK.Libretro.Unity
         public void LoadSRAM() => _bridge?.LoadSRAM();
 
         public void SaveOptions(bool global) => _bridge?.SaveOptions(global);
+        public static void SetMainDirectory(string mainDirectoryPath) => MainDirectoryPath = mainDirectoryPath;
     }
 }

@@ -28,9 +28,9 @@ using UnityEngine.InputSystem;
 namespace SK.Libretro.Unity
 {
     [RequireComponent(typeof(PlayerInput))]
-    internal sealed class PlayerInputProcessor : MonoBehaviour
-    {
-        [SerializeField] private LibretroInstanceVariable _libretroInstanceVariable;
+    public sealed class PlayerInputProcessor : MonoBehaviour {
+
+        [SerializeField] public LibretroInstanceVariable _libretroInstanceVariable;
 
         public bool AnalogDirectionsToDigital { get; set; }
         public short JoypadButtons => (short)_joypadButtons;
