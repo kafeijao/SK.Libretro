@@ -87,7 +87,7 @@ namespace SK.Libretro.Unity
     }
 
     [RequireComponent(typeof(AudioSource)), DisallowMultipleComponent]
-    internal sealed class AudioProcessor: MonoBehaviour, IAudioProcessor
+    public sealed class AudioProcessor: MonoBehaviour, IAudioProcessor
     {
         private const int AUDIO_BUFFER_SIZE = 262144;
         private const int CIRCULAR_BUFFER_SIZE = AUDIO_BUFFER_SIZE * 2;
@@ -115,7 +115,6 @@ namespace SK.Libretro.Unity
                 data[i] = _circularBuffer.Dequeue();
             }
         }
-
 
         public void Init(int sampleRate) => MainThreadDispatcher.Enqueue(() =>
         {
